@@ -1,0 +1,15 @@
+{
+  "name": "netanime-proxy",
+  "version": "1.0.0",
+  "description": "A simple proxy server with referer support for Netanime, deployed on Vercel.",
+  "main": "api/proxy.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}
