@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 export default async function handler(req, res) {
     if (req.method !== "GET") {
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         const response = await axios.get(url, {
             headers: {
                 "Referer": "https://anime-world.co", // Change this as needed
-                "User-Agent": req.headers["user-agent"],
+                "User-Agent": req.headers["user-agent"]
             },
         });
 
